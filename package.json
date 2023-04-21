@@ -1,0 +1,38 @@
+{
+  "name": "electron-serialport",
+  "version": "1.0.2",
+  "description": "A minimal Electron application with node serialport",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:serialport/electron-serialport.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^17.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "serialport": "^10.3.0"
+  },
+  "build": {
+    "appId": "com.co2.widget",
+    "productName": "co2-widget",
+    "mac": {
+      "category": "airquality.app.widget"
+    }
+  }
+}
